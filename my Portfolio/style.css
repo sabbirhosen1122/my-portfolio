@@ -1,1 +1,146 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#0b0f1a;
+    color:white;
+}
+
+/* SECTION */
+section{
+    padding:80px 8%;
+}
+
+h2{
+    font-size:32px;
+    margin-bottom:30px;
+    background:linear-gradient(to right,#00c6ff,#0072ff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 8%;
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+}
+
+.hero-text{
+    max-width:600px;
+}
+
+.hero-text h1{
+    font-size:50px;
+}
+
+.hero-text span{
+    background:linear-gradient(to right,#00c6ff,#0072ff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.hero-text h3{
+    margin-top:10px;
+    color:#ccc;
+}
+
+.hero-text p{
+    margin-top:20px;
+    line-height:1.6;
+    color:#bbb;
+}
+
+.hero-img img{
+    width:380px;
+    border-radius:20px;
+    box-shadow:0 0 40px rgba(0,198,255,0.5);
+    transition:0.4s;
+}
+
+.hero-img img:hover{
+    transform:scale(1.05);
+}
+
+/* ABOUT */
+.about-text{
+    max-width:700px;
+    line-height:1.7;
+    color:#ccc;
+}
+
+/* SKILLS */
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.skill{
+    padding:12px 20px;
+    background:rgba(255,255,255,0.05);
+    border-radius:30px;
+    border:1px solid rgba(255,255,255,0.1);
+    transition:0.3s;
+}
+
+.skill:hover{
+    background:#0072ff;
+}
+
+/* PROJECTS */
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.project-card{
+    background:rgba(255,255,255,0.05);
+    padding:20px;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 20px rgba(0,198,255,0.5);
+}
+
+/* CONTACT */
+.contact-card{
+    background:rgba(255,255,255,0.05);
+    padding:30px;
+    border-radius:20px;
+    max-width:500px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#111;
+    margin-top:50px;
+    color:#777;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-img img{
+        width:250px;
+        margin-top:30px;
+    }
+}
 
